@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Type a whole number to know if it's even or odd:</p>
+    <input id="userVal" type="text" value="">
+    <div id="click-me" onclick="five()">Get results</div>
+    
+    <div id="results"></div>
+    <script>
+    function five(){
+      var userInput = Number(document.getElementById("userVal").value);
+      if ((userInput % 5) == 0){
+        document.getElementById("results").textContent = "The Number is divided by 5";
+      }  else {
+        document.getElementById("results").textContent = "The Number is not divided by 5";
+      }
+    }
+    </script>
+
+
+</body>
+</html>
